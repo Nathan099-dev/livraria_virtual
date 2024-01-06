@@ -20,7 +20,9 @@ id_livro int primary key auto_increment,
 nomelivro varchar(50),
 ano int,
 fkeditora int,
-foreign key (fkeditora) references editora (id_editora)
+foreign key (fkeditora) references editora (id_editora),
+fk_autor int,
+foreign key (fk_autor) references autor (id_autor)
 );
 
 insert into autor (id_autor, nome, sobrenome, nacionalidade) values
@@ -31,14 +33,12 @@ insert into autor (id_autor, nome, sobrenome, nacionalidade) values
 (null, 'Jo', 'Rowling', 'britânica'),
 (null, 'Jeff', 'Kinney', 'americano');
 
-
 insert into editora values
 (1, 'Saraiva'),
 (2, 'rocco'),
 (3, 'moderna'),
 (4, 'Literare'),
 (5, 'New York Times');
-
 
 insert into livro (id_livro, nomelivro, ano) values
 (null, 'O menino do  pijama  listrado', '2008'),
@@ -51,5 +51,13 @@ insert into livro (id_livro, nomelivro, ano) values
 (null, 'Harry Potter e o prisioneiro de Azkaban', '1999'),
 (null, 'Diario de um banana', '2007'),
 (null, 'Diario de um banana: Dias de cão', '2009');
+
+select * from autor;
+select * from editora;
+select * from livro;
+
+
+
+
 
 
