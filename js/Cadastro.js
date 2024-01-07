@@ -29,4 +29,4 @@ btn.onclick = function cadastro_usuario(event){
 
 }
 
-validar();
+cadastro_usuario();
