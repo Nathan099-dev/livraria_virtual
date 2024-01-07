@@ -17,7 +17,7 @@ btn.onclick = function cadastro_usuario(event){
         emailUsuario.classList.add('invalid');
 
     }else{
-        userName.classList.remove('invalid');
+        emailUsuario.classList.remove('invalid');
     }
 
     if (password.value == '') {
@@ -25,8 +25,9 @@ btn.onclick = function cadastro_usuario(event){
 
     }else{
         password.classList.remove('invalid');
+        window.location = '../html/login.html'
     }
 
-}
 
+}
 cadastro_usuario();
