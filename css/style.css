@@ -84,9 +84,6 @@ header{
     cursor: pointer;
 }
 
-
-
- 
 .search-btn button:hover{
     background-color: white;
     color: red;
