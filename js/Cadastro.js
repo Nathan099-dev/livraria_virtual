@@ -3,7 +3,7 @@ const emailUsuario = document.getElementById('email')
 const password = document.getElementById('senha');
 const btn = document.querySelector('button');
 
-btn.onclick = function validar(event){
+btn.onclick = function cadastro_usuario(event){
     event.preventDefault();
 
     if (userName.value == '') {
