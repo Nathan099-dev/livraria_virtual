@@ -74,7 +74,7 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 380px;
+    height: 400px;
     width: 400px;
     margin:  0 150px;
     background-color: white;
@@ -103,11 +103,16 @@ form input{
     outline: none;
 }
 
-.botao-formulario{
-    margin-top: 15px;
+form textarea{
+    width: 220px;
+    resize: none;
+    margin: 10px 0;
+    outline: none;
+    padding: 0 30px;
+
 }
 
-form button{
+button{
     border: none;
     background-color: red;
     color: white;
@@ -115,6 +120,6 @@ form button{
     cursor: pointer;
 }
 
-form button:hover{
+button:hover{
     background-color: rgb(160, 16, 16);
 }
