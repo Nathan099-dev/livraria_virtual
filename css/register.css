@@ -103,6 +103,10 @@ form input{
     outline: none;
 }
 
+form input.invalid{
+    border: 1px  solid red !important;
+}
+
 .botao-formulario{
     margin-top: 15px;
 }
