@@ -26,6 +26,7 @@ btn.onclick = function cadastro_usuario(event){
     }else{
         password.classList.remove('invalid');
         window.location = '../html/login.html'
+        window.alert('Cadastro realizado com sucesso')
     }
 
 
