@@ -8,6 +8,7 @@ btn.onclick = function cadastro_usuario(event){
 
     if (userName.value == '') {
         userName.classList.add('invalid');
+        alert('Campo nome, obrigatório')
 
     }else{
         userName.classList.remove('invalid');
