@@ -29,7 +29,7 @@ function cadastro_usuario(){
 
     }else if (senha.length < 8) {
         alert('Sua senha  precisa ter pelo menos oito caracteres')
-        const  srnha  = document.getElementById('senha').style.border = '1px  solid red';
+        const  senha  = document.getElementById('senha').style.border = '1px  solid red';
         return;
 
     //Caso todas as condições tenham sido  atendidas corretamente
