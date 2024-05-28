@@ -1,6 +1,6 @@
 // Variáveis para controle de tentativas
-let chances = 3;
-let tentativasRealizadas = 0;
+const  chances = 3;
+const  tentativasRealizadas = 0;
 
 // Função para fazer login
 function fazerLogin() {
