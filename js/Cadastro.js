@@ -7,25 +7,27 @@ btn.onclick = function cadastro_usuario(event){
     event.preventDefault();
 
     if (userName.value == '') {
-        userName.classList.add('invalid');
         alert('Campo nome, obrigatório')
+        userName.style.borderColor = 'red'
 
     }else{
-        userName.classList.remove('invalid');
+       userName.style.boderColor = 'green'
     }
 
     if (emailUsuario.value == '') {
-        emailUsuario.classList.add('invalid');
+       alert('Campo email, obrigatório')
+       emailUsuario.style.borderColor = 'red'
 
     }else{
-        emailUsuario.classList.remove('invalid');
+        emailUsuario.style.borderColor = 'green'
     }
 
     if (password.value == '') {
-        password.classList.add('invalid');
+        alert('Campo senha, Obrigatório')
+        password.style.borderColor = 'red'
 
     }else{
-        password.classList.remove('invalid');
+        password.style.borderColor = 'green';
         window.location = '../html/login.html'
         window.alert('Cadastro realizado com sucesso')
     }
