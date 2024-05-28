@@ -1,5 +1,5 @@
-create database livraria;
-use livraria;
+CREATE DATABASE livraria;
+USE livraria;
 
 -- Criação da tabela 'autor'
 CREATE TABLE autor (
@@ -32,22 +32,22 @@ CREATE TABLE livro (
 );
 
 
-insert into autor (id_autor, nome, sobrenome, nacionalidade) values
-(null, 'Tathiane', 'Deândela', 'brasileira'),
-(null, 'Augusto', 'Cury', 'brasileiro'),
-(null, 'Stella', 'Carr', 'brasileira'),
-(null, 'Jhon', 'Boyne', 'irlandês'),
-(null, 'Jo', 'Rowling', 'britânica'),
-(null, 'Jeff', 'Kinney', 'americano');
+INSERT INTO autor (id_autor, nome, sobrenome, nacionalidade) VALUES 
+(NULL, 'Tathiane', 'Deândela', 'brasileira'),
+(NULL, 'Augusto', 'Cury', 'brasileiro'),
+(NULL, 'Stella', 'Carr', 'brasileira'),
+(NULL, 'Jhon', 'Boyne', 'irlandês'),
+(NULL, 'Jo', 'Rowling', 'britânica'),
+(NULL, 'Jeff', 'Kinney', 'americano');
 
-insert into editora values
+INSERT INTO editora VALUES
 (1, 'Saraiva'),
 (2, 'rocco'),
 (3, 'moderna'),
 (4, 'Literare'),
 (5, 'New York Times');
 
-insert into livro (id_livro, nomelivro, ano) values
+INSERT INTO livro (id_livro, nomelivro, ano) VALUES
 (null, 'O menino do  pijama  listrado', '2008'),
 (null, 'A morte tem sete herdeiros', '2013'),
 (null, 'Ansiedade: Como enfrentar o mal do século', '2013'),
