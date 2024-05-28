@@ -1,29 +1,36 @@
 create database livraria;
 use livraria;
 
-create table autor(
-id_autor int primary key auto_increment,
-nome varchar(50),
-sobrenome varchar(50),
-nacionalidade varchar(50),
-fklivro int,
-foreign key (fklivro) references autor (id_autor)
+-- Criação da tabela 'autor'
+CREATE TABLE autor (
+    id_autor INT PRIMARY KEY AUTO_INCREMENT,
+    nome_autor VARCHAR(100) NOT NULL
 );
 
-create table editora(
-id_editora int primary key,
-nome varchar(50)
+-- Criação da tabela 'ano_publicacao'
+CREATE TABLE ano_publicacao (
+    id_ano_publicacao INT PRIMARY KEY AUTO_INCREMENT,
+    ano INT NOT NULL
 );
 
-create table  livro (
-id_livro int primary key auto_increment,
-nomelivro varchar(50),
-ano int,
-fkeditora int,
-foreign key (fkeditora) references editora (id_editora),
-fk_autor int,
-foreign key (fk_autor) references autor (id_autor)
+-- Criação da tabela 'editora'
+CREATE TABLE editora (
+    id_editora INT PRIMARY KEY AUTO_INCREMENT,
+    nome_editora VARCHAR(200) NOT NULL
 );
+
+-- Criação da tabela 'livro'
+CREATE TABLE livro (
+    id_livro INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(200) NOT NULL,
+    id_autor INT,
+    id_ano_publicacao INT,
+    id_editora INT,
+    FOREIGN KEY (id_autor) REFERENCES autor(id_autor),
+    FOREIGN KEY (id_ano_publicacao) REFERENCES ano_publicacao(id_ano_publicacao),
+    FOREIGN KEY (id_editora) REFERENCES editora(id_editora)
+);
+
 
 insert into autor (id_autor, nome, sobrenome, nacionalidade) values
 (null, 'Tathiane', 'Deândela', 'brasileira'),
@@ -52,10 +59,10 @@ insert into livro (id_livro, nomelivro, ano) values
 (null, 'Diario de um banana', '2007'),
 (null, 'Diario de um banana: Dias de cão', '2009');
 
-select * from autor;
-select * from editora;
-select * from livro;
-
+SELECT * FROM  autor;
+SELECT * FROM  ano_publicacao
+SELECT * FROM  editora;
+SELECT * FROM  livro;
 
 
 
