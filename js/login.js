@@ -52,6 +52,9 @@ function fazerLogin() {
     }
 
     // Caso todas as condições sejam atendidas
-    alert('Login efetuado com sucesso!');
-    window.location.href = 'html/index.html';
+    else{
+        alert('Login efetuado com sucesso!');
+        window.location.href = 'html/index.html';
+    }
+   
 }
