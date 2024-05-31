@@ -1,44 +1,40 @@
 //função para cadastro de usuário
 function cadastro_usuario(){
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
+    const nomeUsuario = nome.value;
+    const emailUsuario = email.value;
+    const senhaUsuario = senha.value;
 
     //validação do nome de usuário
-    if (nome.value == '') {
+    if (nomeUsuario == '') {
         alert('Insira o seu nome');
         nome = document.getElementById('nome').style.border = "1px solid red";
         return;
 
     //validação do email do  usuário
-    }else if (email.value = '') {
+    }else if (emailUsuario == '') {
         alert('insira um email')
         email = document.getElementById('email').style.border = '1px solid red';
         return;
 
-    }else  if (email.indexOf("@").value == -1 || email.indexOf('.').value == -1) {
+    }else  if (emailUsuario.indexOf("@") == -1 || emailUsuario.indexOf('.') == -1) {
         alert('Este endereço não é  um email válido');
-        email = document.getElementById('email').style.border = '1px solid red'
+        document.getElementById('email').style.border = '1px solid red'
         return;
 
     //validação da senha do  usuário
-    }else if (senha.value == '') {
+    }else if (senhaUsuario == '') {
         alert('Campo inválido');
-        senha = document.getElementById('senha').border = '1px solid red'
+        document.getElementById('senha').style.border = '1px solid red'
         return;
 
-    }else if (senha.length < 8) {
+    }else if (senhaUsuario.length < 8) {
         alert('Sua senha  precisa ter pelo menos oito caracteres')
-        senha = document.getElementById('senha').style.border = '1px  solid red';
+        document.getElementById('senha').style.border = '1px  solid red';
         return;
 
     //Caso todas as condições tenham sido  atendidas corretamente
     }else{
-        alert('cadastro realizado com sucesso')
-        nome =  document.getElementById('nome').style.border = "1px solid green";
-        email = document.getElementById('email').style.border = "1px solid green";
-        senha = document.getElementById('senha').style.border = "1px solid green";
-
+        alert('cadastro realizado com sucesso');
         window.location.href = 'html/ login.html'
     }
 }
