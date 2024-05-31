@@ -20,7 +20,7 @@ function fazerLogin() {
     }
 
     // Condição 2: Email sem '@' ou '.'
-    if (!email.includes('@') || !email.includes('.')) {
+    if (email.indexOf('@') == -1 || !email.indexOf('.') == -1) {
         alert('O campo de email está incorreto. Por favor, insira um email válido.');
         document.getElementById('email').style.border = '1px solid red';
         return;
