@@ -1,7 +1,7 @@
 //função para cadastro de usuário
-const usuarioCadastrado = 0;
 
 function cadastro_usuario(){
+    const usuarioCadastrado = 0;
     const nomeUsuario = nome.value;
     const emailUsuario = email.value;
     const senhaUsuario = senha.value;
