@@ -1,4 +1,6 @@
 //função para cadastro de usuário
+const usuarioCadastrado = 0;
+
 function cadastro_usuario(){
     const nomeUsuario = nome.value;
     const emailUsuario = email.value;
@@ -35,6 +37,7 @@ function cadastro_usuario(){
     //Caso todas as condições tenham sido  atendidas corretamente
     }else{
         alert('cadastro realizado com sucesso');
+        usuarioCadastrado ++;
         window.location.href = 'html/ login.html'
     }
 }
