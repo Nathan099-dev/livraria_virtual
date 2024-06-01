@@ -1,3 +1,9 @@
-const express = require('express');
+import express from 'express';
+import http from 'http';
+
 const app = express();
+const server = http.createServer();
+app.use(express.static(app))
+port  = 3306
+
 
