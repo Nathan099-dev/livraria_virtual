@@ -40,5 +40,6 @@ function cadastro_usuario(){
         usuarioCadastrado ++;
         window.location.href = 'html/ login.html'
         const boasVindas = window.alert('Bem vindo ao nosso site' + nomeUsuario)
+        return;
     }
 }
