@@ -7,6 +7,8 @@ var app = express();
 
 var indexRouter = require('./src/routes/index');
 var usuarioRouter = require('./src/routes/usuario');
+var loginRouter = require('./src/routes/login');
+var contatoRouter = require('./src/routes/contact')
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')))
@@ -18,6 +20,6 @@ app.use('/usuarioRouter', usuarioRouter)
 
 app.listen(porta, function() {
     console.log()
-    
+
 })
 
