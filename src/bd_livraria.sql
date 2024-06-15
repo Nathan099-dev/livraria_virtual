@@ -26,9 +26,9 @@ CREATE TABLE livro (
     id_autor INT,
     id_ano_publicacao INT,
     id_editora INT,
-    FOREIGN KEY (id_autor) REFERENCES autor(id_autor),
-    FOREIGN KEY (id_ano_publicacao) REFERENCES ano_publicacao(id_ano_publicacao),
-    FOREIGN KEY (id_editora) REFERENCES editora(id_editora)
+    FOREIGN KEY (fk_autor) REFERENCES autor(id_autor),
+    FOREIGN KEY (fk_ano_publicacao) REFERENCES ano_publicacao(id_ano_publicacao),
+    FOREIGN KEY (fk_editora) REFERENCES editora(id_editora)
 );
 
 
