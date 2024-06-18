@@ -16,10 +16,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors());
 
 app.use('/', indexRouter);
-app.use('/usuarioRouter', usuarioRouter)
+app.use('/usuarioRouter', usuarioRouter);
+app.use('/loginRouter', loginRouter);
+app.use('/contatoRouter', contatoRouter);
+
 
 app.listen(porta, function() {
-    console.log()
+    console.log('Testando  resposta');
 
 })
 
