@@ -1,8 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const { response } = require("express");
 
-router.get('/', function(request, response){
-    response.render('index', {title: 'Express'});
-});
-
-module.exports = router;
+axios.get('https://www.googleapis.com/auth/books').then((response) => {
+    console.log(response.data);
+}).catch((error) => {
+    console.log(error);
+})
