@@ -6,7 +6,7 @@ var porta = process.env.AMBIENTE_PROCESSO = 'desenvolvimento' ? 3333:8080;
 var app = express();
 
 var indexRouter = require('./src/routes/index');
-var usuarioRouter = require('./src/routes/usuario');
+var registerRouter = require('./src/routes/register');
 var loginRouter = require('./src/routes/login');
 var contatoRouter = require('./src/routes/contact')
 
@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors());
 
 app.use('/', indexRouter);
-app.use('/usuarioRouter', usuarioRouter);
+app.use('/registerRouter', registerRouter);
 app.use('/loginRouter', loginRouter);
 app.use('/contatoRouter', contatoRouter);
 
