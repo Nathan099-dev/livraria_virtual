@@ -37,7 +37,7 @@ INSERT INTO autor (id_autor, nome, sobrenome, nacionalidade) VALUES
 (NULL, 'Augusto', 'Cury', 'brasileiro'),
 (NULL, 'Stella', 'Carr', 'brasileira'),
 (NULL, 'Jhon', 'Boyne', 'irlandês'),
-(NULL, 'Jo', 'Rowling', 'britânica'),
+(NULL, 'JK', 'Rowling', 'britânica'),
 (NULL, 'Jeff', 'Kinney', 'americano');
 
 INSERT INTO editora VALUES
