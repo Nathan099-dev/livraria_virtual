@@ -48,16 +48,16 @@ INSERT INTO editora VALUES
 (5, 'New York Times');
 
 INSERT INTO livro (id_livro, nomelivro, ano) VALUES
-(null, 'O menino do  pijama  listrado', '2008'),
-(null, 'A morte tem sete herdeiros', '2013'),
-(null, 'Ansiedade: Como enfrentar o mal do século', '2013'),
-(null, 'Faça o tempo trabalhar por você', '2016'),
-(null, 'Faça o tempo enriquecer você', '2020'),
-(null, 'Harry Potter e a pedra filosofal', '1997'),
-(null, 'Harry Potter e a câmara secreta', '1998'),
-(null, 'Harry Potter e o prisioneiro de Azkaban', '1999'),
-(null, 'Diario de um banana', '2007'),
-(null, 'Diario de um banana: Dias de cão', '2009');
+(NULL, 'O menino do  pijama  listrado', '2008'),
+(NULL, 'A morte tem sete herdeiros', '2013'),
+(NULL, 'Ansiedade: Como enfrentar o mal do século', '2013'),
+(NULL, 'Faça o tempo trabalhar por você', '2016'),
+(NULL, 'Faça o tempo enriquecer você', '2020'),
+(NULL, 'Harry Potter e a pedra filosofal', '1997'),
+(NULL, 'Harry Potter e a câmara secreta', '1998'),
+(NULL, 'Harry Potter e o prisioneiro de Azkaban', '1999'),
+(NULL, 'Diario de um banana', '2007'),
+(NULL, 'Diario de um banana: Dias de cão', '2009');
 
 SELECT * FROM  autor;
 SELECT * FROM  ano_publicacao
