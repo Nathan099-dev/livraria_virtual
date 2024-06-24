@@ -76,16 +76,4 @@ header{
 }
 
 
-.search-btn button{
-    border: 0;
-    background-color: red;
-    color: white;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-.search-btn button:hover{
-    background-color: white;
-    color: red;
-    transition: 0.5s;
-}
+.
