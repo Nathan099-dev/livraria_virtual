@@ -33,8 +33,10 @@ function displayResults(data){
       data.items.forEach(livro => {
          let titulo = livro.volumeInfo.title;
          let autores  = livro.volumeInfo.authors.join("", "");
+         let descricao = livro.volumeInfo.description.join("");
 
-         divResults.innerHTML += `<p><strong>${titulo}</strong> por ${autores}</p>`;
+         divResults.innerHTML += `<p><strong>${titulo}</strong> por ${autores}</p>
+         ${descricao}`;
       });
    }else{
       divResults.innerHTML += '<p>Nenhum livro  encotrado</p>';
