@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const server = express();
 
 server.use(express.json())
@@ -23,8 +23,8 @@ const livros = [`
     O diário e Annie Frank,
     `]
 
-    /*Ainda defininco se é melhor deixar deste jeito
-    ou se seria melhor dolocar o link da API  que já usamos antes */
+    /*Ainda definindo se é melhor deixar deste jeito
+    ou se seria melhor colocar o link da API  que já usamos antes */
 
     //retorna um livro
     server.get('/livros/:index', (req, res) => {
