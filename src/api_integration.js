@@ -32,7 +32,7 @@ function displayResults(data){
    if (data.totalItems > 0) {
       data.items.forEach(livro => {
          let titulo = livro.volumeInfo.title;
-         let autores  = livro.volumeInfo.authors.join(", ");
+         let autores  = livro.volumeInfo.authors.join("", "");
          divResults.innerHTML += `<p><strong>${titulo}</strong> por ${autores}</p>`;
       });
    }else{
