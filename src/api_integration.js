@@ -16,7 +16,7 @@ function searchBooks(){
       return;
    }
    
-   let apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + encodeURIComponent(searchInput);
+   let apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=LIF' + encodeURIComponent(searchInput);
 
    fetch(apiUrl).then(response => response.json())
    .then(data => displayResults(data))
@@ -33,6 +33,7 @@ function displayResults(data){
       data.items.forEach(livro => {
          let titulo = livro.volumeInfo.title;
          let autores  = livro.volumeInfo.authors.join("", "");
+
          divResults.innerHTML += `<p><strong>${titulo}</strong> por ${autores}</p>`;
       });
    }else{
