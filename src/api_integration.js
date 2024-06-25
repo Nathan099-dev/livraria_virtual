@@ -15,6 +15,7 @@ function searchBooks(){
    if (searchInput.length < 3) {
       return;
    }
+   
    let apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + encodeURIComponent(searchInput);
 
    fetch(apiUrl).then(response => response.json())
