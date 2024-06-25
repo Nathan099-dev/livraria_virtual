@@ -23,6 +23,9 @@ const livros = [`
     O diário e Annie Frank,
     `]
 
+    /*Ainda defininco se é melhor deixar deste jeito
+    ou se seria melhor dolocar o link da API  que já usamos antes */
+
     //retorna um livro
     server.get('/livros/:index', (req, res) => {
         return  res.json()
