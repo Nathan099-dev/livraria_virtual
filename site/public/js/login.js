@@ -13,7 +13,7 @@ function fazerLogin() {
     document.getElementById('senha').style.border = '';
 
     // Condição 1: Campo email vazio
-    if (email.trim() === '') {
+    if (email.value == '') {
         alert('O campo de email está inválido. Por favor, preencha-o.');
         document.getElementById('email').style.border = '1px solid red';
         return;
@@ -27,7 +27,7 @@ function fazerLogin() {
     }
 
     // Condição 3: Campo senha vazio
-    if (senha.trim() === '') {
+    if (senha.value == '') {
         alert('O campo de senha está inválido. Por favor, forneça a senha cadastrada.');
         document.getElementById('senha').style.border = '1px solid red';
         return;
@@ -38,11 +38,11 @@ function fazerLogin() {
         tentativasRealizadas++;
         chances--;
 
-        if (tentativasRealizadas === 2) {
+        if (tentativasRealizadas == 2) {
             alert('Você tem mais uma chance para efetuar o login antes de cadastrar uma nova senha.');
         }
 
-        if (tentativasRealizadas === 3) {
+        if (tentativasRealizadas == 3) {
             alert('Você excedeu o número de tentativas. Por favor, crie uma nova senha para fazer o login.');
             return;
         }
@@ -54,7 +54,7 @@ function fazerLogin() {
     // Caso todas as condições sejam atendidas
     else{
         alert('Login efetuado com sucesso!');
-        window.location.href = 'html/index.html';
+        window.location.href = '../html/index.html';
     }
    
 }
