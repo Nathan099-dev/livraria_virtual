@@ -1,6 +1,6 @@
 //função para cadastro de usuário
 
-function cadastro_usuario(){
+function cadastro_usuario(nome, email, senha){
     const usuarioCadastrado = 0;
     const nomeUsuario = nome.value;
     const emailUsuario = email.value;
@@ -20,18 +20,18 @@ function cadastro_usuario(){
 
     }else  if (emailUsuario.indexOf("@") == -1 || emailUsuario.indexOf('.') == -1) {
         alert('Este endereço não é  um email válido');
-        document.getElementById('email').style.border = '1px solid red'
+        email = document.getElementById('email').style.border = '1px solid red'
         return;
 
     //validação da senha do  usuário
     }else if (senhaUsuario == '') {
         alert('Campo inválido');
-        document.getElementById('senha').style.border = '1px solid red'
+        senha =  document.getElementById('senha').style.border = '1px solid red'
         return;
 
     }else if (senhaUsuario.length < 8) {
         alert('Sua senha  precisa ter pelo menos oito caracteres')
-        document.getElementById('senha').style.border = '1px  solid red';
+        senha = document.getElementById('senha').style.border = '1px  solid red';
         return;
 
     //Caso todas as condições tenham sido  atendidas corretamente
