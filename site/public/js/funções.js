@@ -52,18 +52,15 @@ function cadastro_usuario(nome, email, senha){
     }
 }
 
-//====================================================================================================================
-
+//=========================================
 
 const  chances = 3;
 const  tentativasRealizadas = 0;
 
 
 function fazerLogin() {
-    
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
-
     
     document.getElementById('email').style.border = '';
     document.getElementById('senha').style.border = '';
