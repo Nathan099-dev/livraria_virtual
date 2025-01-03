@@ -39,6 +39,15 @@ function cadastro_usuario(nome, email, senha){
         usuarioCadastrado ++;
         window.location.href = 'login.html'
         const boasVindas = window.alert('Bem vindo ao nosso site' + nomeUsuario);
-        return boasVindas;
+        boasVindas;
+
+         usuarioCadastrado = {
+            'nome': 'nomeUsuario',
+            'email': 'emailUsuario',
+            'senha': 'senhaUsuario'
+        }
+        usuarioCadastrado.push(usuarioCadastrado);
+        usuarioCadastrado++;
+        return console.log(usuarioCadastrado); 
     }
 }
